@@ -1,8 +1,10 @@
-## sbt project compiled with Scala 3
+#### example :: init
 
-### Usage
+```md
+- sbt new scala/scala3.g8
+- sbt) run
+```
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+#### example :: simple game
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+[writing-a-simple-cli-game-in-scala-3](https://softwaremill.com/writing-a-simple-cli-game-in-scala-3/).
