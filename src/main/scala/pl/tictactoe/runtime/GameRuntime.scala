@@ -1,4 +1,5 @@
 package pl.tictactoe.runtime
+import pl.tictactoe.data.msg.*
 
 import cats.effect.IO
 import cats.syntax.all._
@@ -33,4 +34,4 @@ final class GameRuntime(console: Console):
   yield result
 
   val run: IO[Unit] =
-    console.printLine("\n-- Starting a new game --\n") >> loop(Game.create)
+    console.printLine(Msg.stage0) >> loop(Game.create)

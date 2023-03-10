@@ -4,7 +4,7 @@ import cats.syntax.all._
 import cats.Show
 import scala.collection.immutable.ArraySeq
 
-val BoardSize = 3
+val BoardSize = 5
 
 opaque type Board = ArraySeq[ArraySeq[FieldStatus]]
 
@@ -28,6 +28,7 @@ object Board:
         .mkString("\n   " + "- " * f.size + "\n")
 
   def create: Board =
+    // [...[...]]
     ArraySeq.fill(BoardSize)(ArraySeq.fill(BoardSize)(FieldStatus.Empty))
 
   extension (f: Board)
